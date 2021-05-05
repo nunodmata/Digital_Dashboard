@@ -1,0 +1,1 @@
+parallax é uma libraria para formatar html de forma que ele se mova com o scroll da pagina :)
