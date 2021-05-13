@@ -8,7 +8,7 @@ Para instalar o projeto :
 
 	npm install 
 
-3 - Ainda no terminal correr:
+3 - Depois correr:
 
 	node app.js 
 		OU 
@@ -16,6 +16,6 @@ Para instalar o projeto :
 
 
 
-4 - Havendo sucesso, então abrir:
+4 - Abrir:
 
 	http://localhost:5000/
