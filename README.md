@@ -2,7 +2,7 @@
 
 Para instalar o projeto :
 
-1 - Abrir a pasta "Projeto" num IDE (Visual Studio Code por exemplo)
+1 - Abrir a pasta num IDE (Visual Studio Code por exemplo)
 
 2 - Abrir o terminal e correr :
 
