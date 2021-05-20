@@ -27,10 +27,10 @@ body,h1,h2,h3,h4,h5,h6 {font-family: "Raleway", sans-serif}
   <div class="w3-bar-block">
     <a href="#portfolio" onclick="w3_close()" class="w3-bar-item w3-button w3-padding w3-text-teal"><i class="fa fa-th-large fa-fw w3-margin-right"></i>DASHBOARDS</a> 
     <a href="#about" onclick="w3_close()" class="w3-bar-item w3-button w3-padding"><i class="fa fa-user fa-fw w3-margin-right"></i>PROFILE</a> 
-    <a href="#contact" onclick="w3_close()" class="w3-bar-item w3-button w3-padding"><i class="fa fa-envelope fa-fw w3-margin-right"></i>CONTACT</a>
+    <a href="mailto:nunodmata@gmail.com?&subject=%20DigitalDashboard%20Contact%20Message: &body=This%20is%20a%20message%20from%20DigitalDashboard%20contact%20link."  onclick="w3_close()" class="w3-bar-item w3-button w3-padding"><i class="fa fa-envelope fa-fw w3-margin-right"></i>CONTACT</a>
     <a href="/users/logout" class="w3-bar-item w3-button w3-padding"><i class="fa fa-sign-out fa-fw w3-margin-right"></i>SIGN-OUT</a>
 <a <meta name="viewport" content="width=device-width, initial-scale=1">
-  </div>
+    </div>
   <!-- <div class="w3-panel w3-large">
     <i class="fa fa-facebook-official w3-hover-opacity"></i>
     <i class="fa fa-instagram w3-hover-opacity"></i>
@@ -62,7 +62,6 @@ body,h1,h2,h3,h4,h5,h6 {font-family: "Raleway", sans-serif}
     </div>
     </div>
   </header>
-  
   <!-- First Photo Grid-->
   <div class="w3-row-padding">
     
@@ -91,7 +90,23 @@ body,h1,h2,h3,h4,h5,h6 {font-family: "Raleway", sans-serif}
       </div>
     </div>
   </div>
-  
+  <script src="node_modules/gridstack/dist/gridstack-h5.js"></script>
+<link href="node_modules/gridstack/dist/gridstack.min.css" rel="stylesheet"/>
+<style type="text/css">
+  .grid-stack { background: #FAFAD2; }
+  .grid-stack-item-content { background-color: #18BC9C; }
+</style>
+
+<div class="grid-stack"></div>
+
+<script type="text/javascript">
+  var items = [
+    {content: 'my first widget'}, // will default to location (0,0) and 1x1
+    {w: 2, content: 'another longer widget!'} // will be placed next at (1,0) and 2x1
+  ];
+  var grid = GridStack.init();
+  grid.load(items);
+</script>
   <!-- Second Photo Grid-->
   <div class="w3-row-padding">
     <div class="w3-third w3-container w3-margin-bottom">
