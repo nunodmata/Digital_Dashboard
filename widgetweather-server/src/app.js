@@ -43,10 +43,6 @@ app.get('/help', (req, res) => {
     })
 })
 
-app.get('', (req, res) => {
-    res.send('<h1>Weather</h1>')
-})
-
 app.get('/weather', (req, res ) =>{
     if (!req.query.address) {
         return res.send({
