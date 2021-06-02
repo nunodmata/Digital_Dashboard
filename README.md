@@ -19,3 +19,8 @@ Para instalar o projeto :
 4 - Abrir:
 
 	http://localhost:5000/
+	
+
+# Website Deployed 
+
+**https://pog-digital-dashboard.herokuapp.com**
