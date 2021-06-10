@@ -2,6 +2,7 @@ const express = require('express');
 const router = express.Router();
 const bcrypt = require('bcryptjs');
 const passport = require('passport');
+const { sendWelcomeEmail, sendCancelationEmail } = require('../emails/account')
 //user model
 const User = require('../models/User');
 
@@ -53,6 +54,7 @@ router.post('/register', (req, res) => {
           password2
         });
       } else {
+        sendWelcomeEmail(email, name)
         const newUser = new User({
           name,
           email,
